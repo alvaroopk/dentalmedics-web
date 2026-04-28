@@ -4,6 +4,8 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import WhatsAppFloat from "@/components/layout/WhatsAppFloat";
+import DemoBanner from "@/components/DemoBanner";
+import { SITE_INDEXED } from "@/lib/constants";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -52,11 +54,11 @@ export const metadata: Metadata = {
       "Clínica dental familiar en Madrid (Chamberí) y Murcia. Implantes desde €380, Invisalign, estética dental. Primera consulta gratuita.",
   },
   robots: {
-    index: true,
-    follow: true,
+    index: SITE_INDEXED,
+    follow: SITE_INDEXED,
     googleBot: {
-      index: true,
-      follow: true,
+      index: SITE_INDEXED,
+      follow: SITE_INDEXED,
     },
   },
   alternates: {
@@ -114,6 +116,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <DemoBanner />
       </body>
     </html>
   );

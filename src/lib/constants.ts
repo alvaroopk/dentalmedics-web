@@ -226,3 +226,9 @@ export const TESTIMONIALS = [
     text: "Lo que más me sorprendió fue la transparencia de precios. Sin sorpresas. Los precios están publicados y no hay letra pequeña.",
   },
 ] as const;
+
+// URL de la web original del cliente (usada en el banner de demo)
+export const ORIGINAL_URL = "https://www.dentalmedics.es/";
+
+// Cambiar a true para habilitar la indexación en Google
+export const SITE_INDEXED = false;
